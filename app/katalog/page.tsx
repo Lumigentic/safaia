@@ -80,11 +80,11 @@ export default function CatalogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--lavender-soft)]/20 to-transparent">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 fade-in-up">Katalog książek</h1>
-            <p className="text-2xl text-[var(--color-text-muted)] font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Odkryj nasze starannie wyselekcjonowane publikacje
             </p>
           </div>
@@ -101,8 +101,8 @@ export default function CatalogPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2.5 font-body text-sm tracking-wide rounded-full transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-[var(--sapphire-deep)] text-white shadow-lg scale-105'
-                    : 'bg-gray-100 text-[var(--color-text-muted)] hover:bg-gray-200'
+                    ? 'bg-sapphire-deep text-white shadow-lg scale-105'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
                 {category}
@@ -113,7 +113,7 @@ export default function CatalogPage() {
       </section>
 
       {/* Books Grid */}
-      <section className="section-padding bg-[var(--cream)]">
+      <section className="section-padding bg-cream">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {filteredBooks.map((book, index) => (
@@ -123,7 +123,7 @@ export default function CatalogPage() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Book Cover */}
-                <div className="aspect-[3/4] bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] relative overflow-hidden">
+                <div className="aspect-[3/4] bg-gradient-to-br from-sapphire-deep to-violet-accent relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center text-white p-8">
                     <div className="text-center">
                       <div className="text-6xl mb-4">📖</div>
@@ -140,33 +140,33 @@ export default function CatalogPage() {
                 {/* Book Info */}
                 <div className="p-6">
                   <div className="mb-3">
-                    <span className="inline-block px-3 py-1 bg-[var(--lavender-soft)]/30 text-[var(--sapphire-deep)] text-xs font-body rounded-full">
+                    <span className="inline-block px-3 py-1 bg-lavender-soft/30 text-sapphire-deep text-xs font-body rounded-full">
                       {book.category}
                     </span>
                   </div>
 
-                  <h4 className="text-xl font-heading text-[var(--sapphire-deep)] mb-2 group-hover:text-[var(--violet-accent)] transition-colors">
+                  <h4 className="text-xl font-heading text-sapphire-deep mb-2 group-hover:text-violet-accent transition-colors">
                     {book.title}
                   </h4>
 
-                  <p className="text-sm text-[var(--color-text-muted)] font-body mb-1">
+                  <p className="text-sm text-gray-600 font-body mb-1">
                     {book.author}
                   </p>
 
-                  <p className="text-sm text-[var(--color-text-muted)] font-body leading-relaxed mb-4">
+                  <p className="text-sm text-gray-600 font-body leading-relaxed mb-4">
                     {book.description}
                   </p>
 
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <span className="text-lg font-heading text-[var(--sapphire-deep)] font-semibold">
+                    <span className="text-lg font-heading text-sapphire-deep font-semibold">
                       {book.price}
                     </span>
-                    <span className="text-xs text-[var(--color-text-muted)] font-body">
+                    <span className="text-xs text-gray-600 font-body">
                       {book.year}
                     </span>
                   </div>
 
-                  <button className="w-full mt-4 px-4 py-2.5 bg-[var(--sapphire-deep)] text-white font-body text-sm tracking-wide rounded-sm hover:bg-[var(--indigo-dark)] transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
+                  <button className="w-full mt-4 px-4 py-2.5 bg-sapphire-deep text-white font-body text-sm tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
                     Zobacz szczegóły
                   </button>
                 </div>
@@ -178,10 +178,10 @@ export default function CatalogPage() {
           {filteredBooks.length === 0 && (
             <div className="text-center py-20">
               <div className="text-6xl mb-6">📚</div>
-              <h3 className="text-2xl font-heading text-[var(--sapphire-deep)] mb-4">
+              <h3 className="text-2xl font-heading text-sapphire-deep mb-4">
                 Brak książek w tej kategorii
               </h3>
-              <p className="text-[var(--color-text-muted)] font-body">
+              <p className="text-gray-600 font-body">
                 Pracujemy nad nowymi tytułami. Wróć wkrótce!
               </p>
             </div>
@@ -192,22 +192,22 @@ export default function CatalogPage() {
       {/* Newsletter CTA */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-[var(--lavender-soft)]/20 to-[var(--sapphire-deep)]/10 p-12 rounded-2xl">
-            <h3 className="text-3xl font-heading text-[var(--sapphire-deep)] mb-4">
+          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-lavender-soft/20 to-sapphire-deep/10 p-12 rounded-2xl">
+            <h3 className="text-3xl font-heading text-sapphire-deep mb-4">
               Bądź na bieżąco
             </h3>
-            <p className="text-[var(--color-text-muted)] font-body mb-8">
+            <p className="text-gray-600 font-body mb-8">
               Zapisz się do newslettera i dowiaduj się o nowych publikacjach jako pierwszy
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Twój adres e-mail"
-                className="flex-1 px-4 py-3 rounded-sm border border-gray-300 focus:border-[var(--sapphire-deep)] focus:outline-none font-body"
+                className="flex-1 px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body"
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-[var(--sapphire-deep)] text-white font-body tracking-wide rounded-sm hover:bg-[var(--indigo-dark)] transition-all duration-300 hover:shadow-lg"
+                className="px-8 py-3 bg-sapphire-deep text-white font-body tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg"
               >
                 Zapisz się
               </button>

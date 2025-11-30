@@ -9,11 +9,11 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--lavender-soft)]/20 to-transparent">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 fade-in-up">O nas</h1>
-            <p className="text-2xl text-[var(--color-text-muted)] font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Jesteśmy niezależnym wydawnictwem, które wierzy w moc wiedzy
               i piękno dobrze opowiedzianej historii.
             </p>
@@ -28,9 +28,9 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="mb-6">Dlaczego Safaia?</h2>
-                <div className="space-y-4 text-[var(--color-text-muted)] font-body leading-relaxed">
+                <div className="space-y-4 text-gray-600 font-body leading-relaxed">
                   <p>
-                    Nazwa <strong className="text-[var(--sapphire-deep)]">„Safaia"</strong> (サファイア)
+                    Nazwa <strong className="text-sapphire-deep">„Safaia"</strong> (サファイア)
                     pochodzi z japońskiego słowa oznaczającego szafir — kamień szlachetny,
                     który od wieków symbolizuje mądrość, prawdę i intelektualną jasność.
                   </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
               <div className="relative">
                 <div className="aspect-square rounded-lg overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-sapphire-deep to-violet-accent flex items-center justify-center">
                     <div className="text-center text-white p-8">
                       <div className="text-8xl mb-4">💎</div>
                       <p className="text-3xl font-display mb-2">サファイア</p>
@@ -63,11 +63,11 @@ export default function AboutPage() {
       </section>
 
       {/* Misja */}
-      <section className="section-padding bg-[var(--cream)]">
+      <section className="section-padding bg-cream">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="mb-6">Nasza misja</h2>
-            <p className="text-xl text-[var(--color-text-muted)] font-body leading-relaxed">
+            <p className="text-xl text-gray-600 font-body leading-relaxed">
               Przybliżanie szerszej publiczności interesujących fenomenów, trendów
               i zapomnianych tematów — łącznie ze wznowieniami starych wydań,
               które zasługują na nowe życie.
@@ -77,10 +77,10 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-4xl mb-4">📚</div>
-              <h3 className="text-2xl mb-4 text-[var(--sapphire-deep)] font-heading">
+              <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
                 Literatura faktu
               </h3>
-              <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+              <p className="text-gray-600 font-body leading-relaxed">
                 Specjalizujemy się w reportażach, albumach ilustrowanych i popularnonaukowych
                 publikacjach, które łączą rzetelną wiedzę z piękną formą.
               </p>
@@ -88,10 +88,10 @@ export default function AboutPage() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-4xl mb-4">🔍</div>
-              <h3 className="text-2xl mb-4 text-[var(--sapphire-deep)] font-heading">
+              <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
                 Odkrywanie nieznanych
               </h3>
-              <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+              <p className="text-gray-600 font-body leading-relaxed">
                 Poszukujemy tematów, które fascynują, inspirują i poszerzają horyzonty —
                 od zapomnianych artystów po nieznane historie kulinariów.
               </p>
@@ -99,10 +99,10 @@ export default function AboutPage() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-4xl mb-4">✨</div>
-              <h3 className="text-2xl mb-4 text-[var(--sapphire-deep)] font-heading">
+              <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
                 Piękno w prostocie
               </h3>
-              <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+              <p className="text-gray-600 font-body leading-relaxed">
                 Wierzymy, że forma ma znaczenie. Nasze książki są starannie zaprojektowane,
                 z dbałością o każdy detal — od typografii po jakość papieru.
               </p>
@@ -110,10 +110,10 @@ export default function AboutPage() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-4xl mb-4">🌍</div>
-              <h3 className="text-2xl mb-4 text-[var(--sapphire-deep)] font-heading">
+              <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
                 Ciekawość świata
               </h3>
-              <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+              <p className="text-gray-600 font-body leading-relaxed">
                 Inspirujemy do odkrywania i poznawania. Każda nasza książka to zaproszenie
                 do podróży — intelektualnej, kulturowej lub historycznej.
               </p>
@@ -129,41 +129,41 @@ export default function AboutPage() {
             <h2 className="mb-12 text-center">Nasze wartości</h2>
 
             <div className="space-y-12">
-              <div className="border-l-4 border-[var(--sapphire-deep)] pl-8">
-                <h3 className="text-2xl mb-3 text-[var(--sapphire-deep)] font-heading">
+              <div className="border-l-4 border-sapphire-deep pl-8">
+                <h3 className="text-2xl mb-3 text-sapphire-deep font-heading">
                   Otwartość na nowe i nieznane
                 </h3>
-                <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+                <p className="text-gray-600 font-body leading-relaxed">
                   Nie boimy się niesztampowych tematów i świeżych perspektyw. Szukamy głosów,
                   które wnoszą coś nowego do dyskusji kulturowej.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[var(--violet-accent)] pl-8">
-                <h3 className="text-2xl mb-3 text-[var(--sapphire-deep)] font-heading">
+              <div className="border-l-4 border-violet-accent pl-8">
+                <h3 className="text-2xl mb-3 text-sapphire-deep font-heading">
                   Wiedza jako źródło szczęścia
                 </h3>
-                <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+                <p className="text-gray-600 font-body leading-relaxed">
                   Wierzymy, że poznawanie świata i poszerzanie horyzontów jest jednym z największych
                   źródeł radości w życiu. Każda nasza książka ma inspirować i ubogacać.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[var(--gold-accent)] pl-8">
-                <h3 className="text-2xl mb-3 text-[var(--sapphire-deep)] font-heading">
+              <div className="border-l-4 border-gold-accent pl-8">
+                <h3 className="text-2xl mb-3 text-sapphire-deep font-heading">
                   Ciekawość świata
                 </h3>
-                <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+                <p className="text-gray-600 font-body leading-relaxed">
                   Świat jest pełen fascynujących historii czekających na odkrycie. Nasza rola to
                   znajdowanie tych opowieści i dzielenie się nimi z czytelnikami.
                 </p>
               </div>
 
-              <div className="border-l-4 border-[var(--lavender-soft)] pl-8">
-                <h3 className="text-2xl mb-3 text-[var(--sapphire-deep)] font-heading">
+              <div className="border-l-4 border-lavender-soft pl-8">
+                <h3 className="text-2xl mb-3 text-sapphire-deep font-heading">
                   Piękno w prostocie
                 </h3>
-                <p className="text-[var(--color-text-muted)] font-body leading-relaxed">
+                <p className="text-gray-600 font-body leading-relaxed">
                   Elegancja nie wymaga nadmiaru. W naszych publikacjach stawiamy na klarowność,
                   harmonię i wyważone proporcje — zarówno w treści, jak i formie.
                 </p>
@@ -174,7 +174,7 @@ export default function AboutPage() {
       </section>
 
       {/* Kim jesteśmy */}
-      <section className="section-padding bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] text-white">
+      <section className="section-padding bg-gradient-to-br from-sapphire-deep to-violet-accent text-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-8 text-white">Kim jesteśmy</h2>

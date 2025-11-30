@@ -4,16 +4,16 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[var(--sapphire-deep)] text-white relative overflow-hidden">
+    <footer className="bg-sapphire-deep text-white relative overflow-hidden">
       {/* Dekoracyjny gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[var(--violet-accent)]/20 via-transparent to-[var(--indigo-dark)]/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-accent/20 via-transparent to-indigo-dark/30 pointer-events-none" />
 
       <div className="container relative z-10">
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* O wydawnictwie */}
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-white to-[var(--lavender-soft)] rounded-full opacity-90" />
+              <div className="w-8 h-8 bg-gradient-to-br from-white to-lavender-soft rounded-full opacity-90" />
               <h3 className="text-xl font-display text-white">Safaia</h3>
             </div>
             <p className="text-sm text-white/80 font-body leading-relaxed max-w-xs">

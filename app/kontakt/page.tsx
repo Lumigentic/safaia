@@ -32,13 +32,13 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--lavender-soft)]/20 to-transparent">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 fade-in-up">Kontakt</h1>
-            <p className="text-2xl text-[var(--color-text-muted)] font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Masz pytania? Chcesz z nami współpracować?
-              <span className="block mt-2 text-[var(--sapphire-deep)] font-semibold">
+              <span className="block mt-2 text-sapphire-deep font-semibold">
                 Skontaktuj się z nami — odpowiadamy na każdą wiadomość.
               </span>
             </p>
@@ -56,7 +56,7 @@ export default function ContactPage() {
 
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -70,23 +70,23 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-[var(--sapphire-deep)] mb-2">
+                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
                       Email
                     </h3>
-                    <p className="text-[var(--color-text-muted)] font-body mb-1">
+                    <p className="text-gray-600 font-body mb-1">
                       Ogólne pytania:{' '}
                       <a
                         href="mailto:kontakt@safaia.pl"
-                        className="text-[var(--sapphire-deep)] hover:underline"
+                        className="text-sapphire-deep hover:underline"
                       >
                         kontakt@safaia.pl
                       </a>
                     </p>
-                    <p className="text-[var(--color-text-muted)] font-body">
+                    <p className="text-gray-600 font-body">
                       Dla autorów:{' '}
                       <a
                         href="mailto:manuskrypty@safaia.pl"
-                        className="text-[var(--sapphire-deep)] hover:underline"
+                        className="text-sapphire-deep hover:underline"
                       >
                         manuskrypty@safaia.pl
                       </a>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -109,25 +109,25 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-[var(--sapphire-deep)] mb-2">
+                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
                       Social Media
                     </h3>
                     <div className="flex gap-4">
                       <a
                         href="#"
-                        className="text-[var(--color-text-muted)] hover:text-[var(--sapphire-deep)] transition-colors"
+                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
                       >
                         Instagram
                       </a>
                       <a
                         href="#"
-                        className="text-[var(--color-text-muted)] hover:text-[var(--sapphire-deep)] transition-colors"
+                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
                       >
                         Facebook
                       </a>
                       <a
                         href="#"
-                        className="text-[var(--color-text-muted)] hover:text-[var(--sapphire-deep)] transition-colors"
+                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
                       >
                         LinkedIn
                       </a>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -150,10 +150,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-[var(--sapphire-deep)] mb-2">
+                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
                       Założycielka
                     </h3>
-                    <p className="text-[var(--color-text-muted)] font-body">
+                    <p className="text-gray-600 font-body">
                       <strong>Rita Krawczyk</strong>
                       <br />
                       Redaktor naczelna i wydawca
@@ -163,11 +163,11 @@ export default function ContactPage() {
               </div>
 
               {/* Dodatkowe info */}
-              <div className="mt-12 p-6 bg-[var(--cream)] rounded-lg">
-                <h4 className="text-lg font-heading text-[var(--sapphire-deep)] mb-3">
+              <div className="mt-12 p-6 bg-cream rounded-lg">
+                <h4 className="text-lg font-heading text-sapphire-deep mb-3">
                   Czas odpowiedzi
                 </h4>
-                <p className="text-sm text-[var(--color-text-muted)] font-body leading-relaxed">
+                <p className="text-sm text-gray-600 font-body leading-relaxed">
                   Staramy się odpowiadać na wszystkie wiadomości w ciągu 2-3 dni roboczych.
                   W przypadku zgłoszeń manuskryptów czas odpowiedzi może wynosić do 3 tygodni.
                 </p>
@@ -175,8 +175,8 @@ export default function ContactPage() {
             </div>
 
             {/* Prawa strona - formularz */}
-            <div className="bg-[var(--cream)] p-8 rounded-lg">
-              <h3 className="text-2xl font-heading text-[var(--sapphire-deep)] mb-6">
+            <div className="bg-cream p-8 rounded-lg">
+              <h3 className="text-2xl font-heading text-sapphire-deep mb-6">
                 Wyślij wiadomość
               </h3>
 
@@ -190,7 +190,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-body text-[var(--color-text)] mb-2"
+                    className="block text-sm font-body text-charcoal mb-2"
                   >
                     Imię i nazwisko *
                   </label>
@@ -201,7 +201,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-[var(--sapphire-deep)] focus:outline-none font-body bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
                     placeholder="Jan Kowalski"
                   />
                 </div>
@@ -209,7 +209,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-body text-[var(--color-text)] mb-2"
+                    className="block text-sm font-body text-charcoal mb-2"
                   >
                     Email *
                   </label>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-[var(--sapphire-deep)] focus:outline-none font-body bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
                     placeholder="jan@example.com"
                   />
                 </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-body text-[var(--color-text)] mb-2"
+                    className="block text-sm font-body text-charcoal mb-2"
                   >
                     Temat *
                   </label>
@@ -238,7 +238,7 @@ export default function ContactPage() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-[var(--sapphire-deep)] focus:outline-none font-body bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
                   >
                     <option value="">Wybierz temat...</option>
                     <option value="manuskrypt">Zgłoszenie manuskryptu</option>
@@ -252,7 +252,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-body text-[var(--color-text)] mb-2"
+                    className="block text-sm font-body text-charcoal mb-2"
                   >
                     Wiadomość *
                   </label>
@@ -263,19 +263,19 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-[var(--sapphire-deep)] focus:outline-none font-body resize-none bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body resize-none bg-white"
                     placeholder="Twoja wiadomość..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-[var(--sapphire-deep)] text-white font-body text-lg tracking-wide rounded-sm hover:bg-[var(--indigo-dark)] transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  className="w-full px-8 py-4 bg-sapphire-deep text-white font-body text-lg tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   Wyślij wiadomość
                 </button>
 
-                <p className="text-xs text-[var(--color-text-muted)] font-body text-center">
+                <p className="text-xs text-gray-600 font-body text-center">
                   * Pola wymagane
                 </p>
               </form>
@@ -285,7 +285,7 @@ export default function ContactPage() {
       </section>
 
       {/* Mapa lub dodatkowa sekcja */}
-      <section className="section-padding bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] text-white">
+      <section className="section-padding bg-gradient-to-br from-sapphire-deep to-violet-accent text-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-6 text-white">Współpracujmy razem</h2>
@@ -297,13 +297,13 @@ export default function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:kontakt@safaia.pl"
-                className="px-8 py-3 bg-white text-[var(--sapphire-deep)] font-body tracking-wide rounded-sm hover:bg-[var(--cream)] transition-all duration-300 hover:shadow-lg"
+                className="px-8 py-3 bg-white text-sapphire-deep font-body tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg"
               >
                 kontakt@safaia.pl
               </a>
               <a
                 href="mailto:manuskrypty@safaia.pl"
-                className="px-8 py-3 border-2 border-white text-white font-body tracking-wide rounded-sm hover:bg-white hover:text-[var(--sapphire-deep)] transition-all duration-300"
+                className="px-8 py-3 border-2 border-white text-white font-body tracking-wide rounded-sm hover:bg-white hover:text-sapphire-deep transition-all duration-300"
               >
                 manuskrypty@safaia.pl
               </a>

@@ -40,14 +40,14 @@ export default function Navigation() {
         <Link href="/" className="group">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-[var(--sapphire-deep)] to-[var(--violet-accent)] rounded-full opacity-90 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110" />
-              <div className="absolute inset-0 w-10 h-10 bg-gradient-to-br from-[var(--lavender-soft)] to-transparent rounded-full opacity-30 blur-sm group-hover:opacity-50 transition-all" />
+              <div className="w-10 h-10 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full opacity-90 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110" />
+              <div className="absolute inset-0 w-10 h-10 bg-gradient-to-br from-lavender-soft to-transparent rounded-full opacity-30 blur-sm group-hover:opacity-50 transition-all" />
             </div>
             <div>
-              <h1 className="text-2xl font-display font-medium tracking-tight text-[var(--sapphire-deep)] group-hover:text-[var(--violet-accent)] transition-colors">
+              <h1 className="text-2xl font-display font-medium tracking-tight text-sapphire-deep group-hover:text-violet-accent transition-colors">
                 Safaia
               </h1>
-              <p className="text-xs text-[var(--color-text-muted)] font-body tracking-wide">
+              <p className="text-xs text-gray-600 font-body tracking-wide">
                 Wydawnictwo
               </p>
             </div>
@@ -60,15 +60,15 @@ export default function Navigation() {
             <Link
               key={link.href}
               href={link.href}
-              className={`relative font-body text-sm tracking-wide transition-all duration-300 hover:text-[var(--sapphire-deep)] ${
+              className={`relative font-body text-sm tracking-wide transition-all duration-300 hover:text-sapphire-deep ${
                 pathname === link.href
-                  ? 'text-[var(--sapphire-deep)] font-semibold'
-                  : 'text-[var(--color-text-muted)]'
+                  ? 'text-sapphire-deep font-semibold'
+                  : 'text-gray-600'
               }`}
             >
               {link.label}
               {pathname === link.href && (
-                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--sapphire-deep)] to-[var(--violet-accent)]" />
+                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-sapphire-deep to-violet-accent" />
               )}
             </Link>
           ))}
@@ -78,7 +78,7 @@ export default function Navigation() {
         <div className="hidden lg:block">
           <Link
             href="/dla-autorow"
-            className="px-6 py-2.5 bg-[var(--sapphire-deep)] text-white font-body text-sm tracking-wide rounded-sm hover:bg-[var(--indigo-dark)] transition-all duration-300 hover:shadow-lg hover:scale-105"
+            className="px-6 py-2.5 bg-sapphire-deep text-white font-body text-sm tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg hover:scale-105"
           >
             Wyślij manuskrypt
           </Link>
@@ -87,7 +87,7 @@ export default function Navigation() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-[var(--sapphire-deep)]"
+          className="lg:hidden p-2 text-sapphire-deep"
           aria-label="Toggle menu"
         >
           <svg
@@ -119,8 +119,8 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`font-body text-base py-2 transition-colors ${
                   pathname === link.href
-                    ? 'text-[var(--sapphire-deep)] font-semibold'
-                    : 'text-[var(--color-text-muted)]'
+                    ? 'text-sapphire-deep font-semibold'
+                    : 'text-gray-600'
                 }`}
               >
                 {link.label}
@@ -129,7 +129,7 @@ export default function Navigation() {
             <Link
               href="/dla-autorow"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 px-6 py-3 bg-[var(--sapphire-deep)] text-white font-body text-sm text-center tracking-wide rounded-sm"
+              className="mt-2 px-6 py-3 bg-sapphire-deep text-white font-body text-sm text-center tracking-wide rounded-sm"
             >
               Wyślij manuskrypt
             </Link>
