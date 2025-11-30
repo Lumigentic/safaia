@@ -112,9 +112,9 @@ export default function ForAuthorsPage() {
       <section className="section-padding bg-cream">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <h2 className="mb-12 text-center">Proces współpracy</h2>
+            <h2 className="mb-10 text-center">Proces współpracy</h2>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               {[
                 {
                   step: '01',
@@ -155,16 +155,16 @@ export default function ForAuthorsPage() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 flex gap-6 group stagger-item"
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 flex gap-4 group stagger-item"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center text-white font-display text-xl group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center text-white font-display text-base group-hover:scale-110 transition-transform">
                       {item.step}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-2xl mb-3 text-sapphire-deep font-heading group-hover:text-violet-accent transition-colors">
+                    <h3 className="text-lg mb-2 text-sapphire-deep font-heading group-hover:text-violet-accent transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 font-body leading-relaxed">
@@ -182,12 +182,12 @@ export default function ForAuthorsPage() {
       <section className="section-padding bg-white">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <h2 className="mb-12 text-center">Co zapewniamy?</h2>
+            <h2 className="mb-10 text-center">Co zapewniamy?</h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6">
-                <div className="text-5xl mb-4">🤝</div>
-                <h3 className="text-xl mb-3 text-sapphire-deep font-heading">
+                <div className="text-3xl mb-3">🤝</div>
+                <h3 className="text-base mb-2 text-sapphire-deep font-heading">
                   Partnerstwo
                 </h3>
                 <p className="text-gray-600 font-body">
@@ -197,8 +197,8 @@ export default function ForAuthorsPage() {
               </div>
 
               <div className="text-center p-6">
-                <div className="text-5xl mb-4">✨</div>
-                <h3 className="text-xl mb-3 text-sapphire-deep font-heading">
+                <div className="text-3xl mb-3">✨</div>
+                <h3 className="text-base mb-2 text-sapphire-deep font-heading">
                   Profesjonalizm
                 </h3>
                 <p className="text-gray-600 font-body">
@@ -208,8 +208,8 @@ export default function ForAuthorsPage() {
               </div>
 
               <div className="text-center p-6">
-                <div className="text-5xl mb-4">📢</div>
-                <h3 className="text-xl mb-3 text-sapphire-deep font-heading">
+                <div className="text-3xl mb-3">📢</div>
+                <h3 className="text-base mb-2 text-sapphire-deep font-heading">
                   Promocja
                 </h3>
                 <p className="text-gray-600 font-body">
@@ -255,13 +255,13 @@ export default function ForAuthorsPage() {
       <section className="section-padding bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="mb-12 text-center">Najczęściej zadawane pytania</h2>
+            <h2 className="mb-10 text-center">Najczęściej zadawane pytania</h2>
 
-            <div className="space-y-6">
-              <details className="group bg-cream p-6 rounded-lg cursor-pointer">
-                <summary className="font-heading text-lg text-sapphire-deep list-none flex items-center justify-between">
+            <div className="space-y-4">
+              <details className="group bg-cream p-5 rounded-lg cursor-pointer">
+                <summary className="font-heading text-base text-sapphire-deep list-none flex items-center justify-between">
                   Czy mogę zgłosić nieukończony manuskrypt?
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="mt-4 text-gray-600 font-body leading-relaxed">
                   Tak! Wystarczy synopsis i próbka tekstu (10-20 stron). Jeśli będziemy zainteresowani,
@@ -269,10 +269,10 @@ export default function ForAuthorsPage() {
                 </p>
               </details>
 
-              <details className="group bg-cream p-6 rounded-lg cursor-pointer">
-                <summary className="font-heading text-lg text-sapphire-deep list-none flex items-center justify-between">
+              <details className="group bg-cream p-5 rounded-lg cursor-pointer">
+                <summary className="font-heading text-base text-sapphire-deep list-none flex items-center justify-between">
                   Jak długo czeka się na odpowiedź?
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="mt-4 text-gray-600 font-body leading-relaxed">
                   Staramy się odpowiadać w ciągu 2-3 tygodni. Czytamy każdy zgłoszony tekst
@@ -280,10 +280,10 @@ export default function ForAuthorsPage() {
                 </p>
               </details>
 
-              <details className="group bg-cream p-6 rounded-lg cursor-pointer">
-                <summary className="font-heading text-lg text-sapphire-deep list-none flex items-center justify-between">
+              <details className="group bg-cream p-5 rounded-lg cursor-pointer">
+                <summary className="font-heading text-base text-sapphire-deep list-none flex items-center justify-between">
                   Czy współpracujecie tylko z doświadczonymi autorami?
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="mt-4 text-gray-600 font-body leading-relaxed">
                   Nie! Liczy się dla nas przede wszystkim temat, pasja i jakość tekstu.
@@ -291,10 +291,10 @@ export default function ForAuthorsPage() {
                 </p>
               </details>
 
-              <details className="group bg-cream p-6 rounded-lg cursor-pointer">
-                <summary className="font-heading text-lg text-sapphire-deep list-none flex items-center justify-between">
+              <details className="group bg-cream p-5 rounded-lg cursor-pointer">
+                <summary className="font-heading text-base text-sapphire-deep list-none flex items-center justify-between">
                   Jakie są warunki finansowe współpracy?
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="mt-4 text-gray-600 font-body leading-relaxed">
                   Szczegóły ustalamy indywidualnie z każdym autorem. Oferujemy honorarium autorskie

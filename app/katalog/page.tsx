@@ -80,11 +80,11 @@ export default function CatalogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
+      <section className="pt-28 pb-16 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6 fade-in-up">Katalog książek</h1>
-            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="mb-4 fade-in-up">Katalog książek</h1>
+            <p className="text-lg text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Odkryj nasze starannie wyselekcjonowane publikacje
             </p>
           </div>
@@ -192,22 +192,22 @@ export default function CatalogPage() {
       {/* Newsletter CTA */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-lavender-soft/20 to-sapphire-deep/10 p-12 rounded-2xl">
-            <h3 className="text-3xl font-heading text-sapphire-deep mb-4">
+          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-lavender-soft/20 to-sapphire-deep/10 p-8 rounded-lg">
+            <h3 className="text-xl font-heading text-sapphire-deep mb-3">
               Bądź na bieżąco
             </h3>
-            <p className="text-gray-600 font-body mb-8">
+            <p className="text-sm text-gray-600 font-body mb-6">
               Zapisz się do newslettera i dowiaduj się o nowych publikacjach jako pierwszy
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Twój adres e-mail"
-                className="flex-1 px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body"
+                className="flex-1 px-4 py-2.5 text-sm rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body"
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-sapphire-deep text-white font-body tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg"
+                className="px-6 py-2.5 bg-sapphire-deep text-white font-body text-sm tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg"
               >
                 Zapisz się
               </button>

@@ -68,13 +68,13 @@ export default function ServicesPage() {
       {/* Szczegółowy opis usług */}
       <section className="section-padding bg-cream">
         <div className="container">
-          <div className="max-w-5xl mx-auto space-y-16">
+          <div className="max-w-5xl mx-auto space-y-12">
             {/* Redakcja */}
-            <div className="bg-white p-10 rounded-lg shadow-sm">
-              <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
-                  <div className="text-5xl mb-6">✍️</div>
-                  <h2 className="mb-6">Redakcja i korekta</h2>
+                  <div className="text-3xl mb-4">✍️</div>
+                  <h2 className="mb-4">Redakcja i korekta</h2>
                   <p className="text-gray-600 font-body leading-relaxed mb-6">
                     Oferujemy pełną obsługę redakcyjną — od pierwszej wersji tekstu
                     po gotową do druku publikację.
@@ -126,11 +126,11 @@ export default function ServicesPage() {
             </div>
 
             {/* Projekt graficzny */}
-            <div className="bg-white p-10 rounded-lg shadow-sm">
-              <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
-                  <div className="text-5xl mb-6">🎨</div>
-                  <h2 className="mb-6">Projekt graficzny i skład</h2>
+                  <div className="text-3xl mb-4">🎨</div>
+                  <h2 className="mb-4">Projekt graficzny i skład</h2>
                   <p className="text-gray-600 font-body leading-relaxed mb-6">
                     Każda książka to unikalne dzieło. Dbamy o każdy detal wizualny,
                     tworząc projekty, które zachwycają i zapamiętują się.
@@ -181,11 +181,11 @@ export default function ServicesPage() {
             </div>
 
             {/* Produkcja i dystrybucja */}
-            <div className="bg-white p-10 rounded-lg shadow-sm">
-              <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
-                  <div className="text-5xl mb-6">📦</div>
-                  <h2 className="mb-6">Produkcja i dystrybucja</h2>
+                  <div className="text-3xl mb-4">📦</div>
+                  <h2 className="mb-4">Produkcja i dystrybucja</h2>
                   <p className="text-gray-600 font-body leading-relaxed mb-6">
                     Od wyboru papieru po dotarcie książki do czytelników — zajmujemy się
                     całym procesem produkcji i dystrybucji.
@@ -244,15 +244,15 @@ export default function ServicesPage() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <h2 className="mb-4 text-center">Pakiety usług</h2>
-            <p className="text-center text-xl text-gray-600 font-body mb-12 max-w-3xl mx-auto">
+            <p className="text-center text-base text-gray-600 font-body mb-10 max-w-3xl mx-auto">
               Wybierz pakiet dopasowany do Twoich potrzeb lub skontaktuj się z nami,
               aby stworzyć indywidualną ofertę
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               {/* Pakiet Basic */}
-              <div className="border-2 border-lavender-soft rounded-lg p-8 hover:border-sapphire-deep transition-all duration-300 hover:shadow-xl">
-                <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+              <div className="border-2 border-lavender-soft rounded-lg p-6 hover:border-sapphire-deep transition-all duration-300 hover:shadow-lg">
+                <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                   Basic
                 </h3>
                 <p className="text-gray-600 font-body mb-6">
@@ -281,11 +281,11 @@ export default function ServicesPage() {
               </div>
 
               {/* Pakiet Premium */}
-              <div className="border-2 border-sapphire-deep rounded-lg p-8 bg-gradient-to-br from-sapphire-deep/5 to-transparent relative hover:shadow-2xl transition-all duration-300 scale-105">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold-accent text-white px-4 py-1 rounded-full text-sm font-body">
+              <div className="border-2 border-sapphire-deep rounded-lg p-6 bg-gradient-to-br from-sapphire-deep/5 to-transparent relative hover:shadow-lg transition-all duration-300 scale-105">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold-accent text-white px-3 py-1 rounded-full text-xs font-body">
                   Najpopularniejszy
                 </div>
-                <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+                <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                   Premium
                 </h3>
                 <p className="text-gray-600 font-body mb-6">
@@ -322,8 +322,8 @@ export default function ServicesPage() {
               </div>
 
               {/* Pakiet Full */}
-              <div className="border-2 border-lavender-soft rounded-lg p-8 hover:border-sapphire-deep transition-all duration-300 hover:shadow-xl">
-                <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+              <div className="border-2 border-lavender-soft rounded-lg p-6 hover:border-sapphire-deep transition-all duration-300 hover:shadow-lg">
+                <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                   Full Service
                 </h3>
                 <p className="text-gray-600 font-body mb-6">
@@ -367,14 +367,14 @@ export default function ServicesPage() {
       <section className="section-padding bg-gradient-to-br from-sapphire-deep to-violet-accent text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6 text-white">Potrzebujesz indywidualnej oferty?</h2>
-            <p className="text-xl mb-10 leading-relaxed font-body text-white/90">
+            <h2 className="mb-4 text-white">Potrzebujesz indywidualnej oferty?</h2>
+            <p className="text-base mb-8 leading-relaxed font-body text-white/90">
               Skontaktuj się z nami, aby omówić szczegóły Twojego projektu
               i otrzymać spersonalizowaną wycenę.
             </p>
             <Link
               href="/kontakt"
-              className="inline-block px-10 py-4 bg-white text-sapphire-deep font-body text-lg tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-2xl hover:scale-105"
+              className="inline-block px-6 py-3 bg-white text-sapphire-deep font-body text-sm tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg"
             >
               Skontaktuj się z nami
             </Link>

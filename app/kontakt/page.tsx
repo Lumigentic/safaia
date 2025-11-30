@@ -70,7 +70,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
+                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
                       Email
                     </h3>
                     <p className="text-gray-600 font-body mb-1">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
+                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
                       Social Media
                     </h3>
                     <div className="flex gap-4">
@@ -150,7 +150,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading text-sapphire-deep mb-2">
+                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
                       Założycielka
                     </h3>
                     <p className="text-gray-600 font-body">
@@ -163,8 +163,8 @@ export default function ContactPage() {
               </div>
 
               {/* Dodatkowe info */}
-              <div className="mt-12 p-6 bg-cream rounded-lg">
-                <h4 className="text-lg font-heading text-sapphire-deep mb-3">
+              <div className="mt-8 p-4 bg-cream rounded-lg">
+                <h4 className="text-sm font-heading text-sapphire-deep mb-2">
                   Czas odpowiedzi
                 </h4>
                 <p className="text-sm text-gray-600 font-body leading-relaxed">
@@ -175,8 +175,8 @@ export default function ContactPage() {
             </div>
 
             {/* Prawa strona - formularz */}
-            <div className="bg-cream p-8 rounded-lg">
-              <h3 className="text-2xl font-heading text-sapphire-deep mb-6">
+            <div className="bg-cream p-6 rounded-lg">
+              <h3 className="text-lg font-heading text-sapphire-deep mb-4">
                 Wyślij wiadomość
               </h3>
 
@@ -270,7 +270,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-sapphire-deep text-white font-body text-lg tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  className="w-full px-6 py-3 bg-sapphire-deep text-white font-body text-sm tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg"
                 >
                   Wyślij wiadomość
                 </button>
@@ -288,8 +288,8 @@ export default function ContactPage() {
       <section className="section-padding bg-gradient-to-br from-sapphire-deep to-violet-accent text-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-6 text-white">Współpracujmy razem</h2>
-            <p className="text-xl leading-relaxed font-body text-white/90 mb-8">
+            <h2 className="mb-4 text-white">Współpracujmy razem</h2>
+            <p className="text-base leading-relaxed font-body text-white/90 mb-6">
               Jesteśmy otwarci na nowe pomysły, projekty i partnerstwa.
               Niezależnie od tego, czy jesteś autorem, ilustratorem, fotografem
               czy po prostu miłośnikiem dobrych książek — chętnie Cię poznamy.
@@ -297,13 +297,13 @@ export default function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:kontakt@safaia.pl"
-                className="px-8 py-3 bg-white text-sapphire-deep font-body tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg"
+                className="px-6 py-2.5 bg-white text-sapphire-deep font-body text-sm tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg"
               >
                 kontakt@safaia.pl
               </a>
               <a
                 href="mailto:manuskrypty@safaia.pl"
-                className="px-8 py-3 border-2 border-white text-white font-body tracking-wide rounded-sm hover:bg-white hover:text-sapphire-deep transition-all duration-300"
+                className="px-6 py-2.5 border-2 border-white text-white font-body text-sm tracking-wide rounded-sm hover:bg-white hover:text-sapphire-deep transition-all duration-300"
               >
                 manuskrypty@safaia.pl
               </a>
