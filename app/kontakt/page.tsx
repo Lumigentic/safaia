@@ -32,11 +32,11 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
+      <section className="pt-28 pb-16 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6 fade-in-up">Kontakt</h1>
-            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="mb-4 fade-in-up">Kontakt</h1>
+            <p className="text-lg text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Masz pytania? Chcesz z nami współpracować?
               <span className="block mt-2 text-sapphire-deep font-semibold">
                 Skontaktuj się z nami — odpowiadamy na każdą wiadomość.
@@ -49,10 +49,10 @@ export default function ContactPage() {
       {/* Informacje kontaktowe + formularz */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
             {/* Lewa strona - informacje */}
             <div>
-              <h2 className="mb-8">Skontaktuj się z nami</h2>
+              <h2 className="mb-6">Skontaktuj się z nami</h2>
 
               <div className="space-y-8">
                 <div className="flex items-start gap-4">

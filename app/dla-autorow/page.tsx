@@ -10,13 +10,13 @@ export default function ForAuthorsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 via-transparent to-sapphire-deep/10 relative overflow-hidden">
+      <section className="pt-28 pb-16 bg-gradient-to-br from-lavender-soft/20 via-transparent to-sapphire-deep/10 relative overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-violet-accent/10 to-transparent rounded-full blur-3xl" />
 
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6 fade-in-up">Dla autorów</h1>
-            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="mb-4 fade-in-up">Dla autorów</h1>
+            <p className="text-lg text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Szukamy unikalnych głosów i fascynujących historii.
               <span className="block mt-2 text-sapphire-deep font-semibold">
                 Twoja książka może być naszym następnym klejnotem.
@@ -30,12 +30,12 @@ export default function ForAuthorsPage() {
       <section className="section-padding bg-white">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <h2 className="mb-12 text-center">Czego szukamy?</h2>
+            <h2 className="mb-10 text-center">Czego szukamy?</h2>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-cream p-8 rounded-lg">
-                <div className="text-4xl mb-4">✍️</div>
-                <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              <div className="bg-cream p-6 rounded-lg">
+                <div className="text-3xl mb-3">✍️</div>
+                <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                   Tematyka
                 </h3>
                 <ul className="space-y-3 text-gray-600 font-body">
@@ -62,9 +62,9 @@ export default function ForAuthorsPage() {
                 </ul>
               </div>
 
-              <div className="bg-cream p-8 rounded-lg">
-                <div className="text-4xl mb-4">📚</div>
-                <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+              <div className="bg-cream p-6 rounded-lg">
+                <div className="text-3xl mb-3">📚</div>
+                <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                   Formy
                 </h3>
                 <ul className="space-y-3 text-gray-600 font-body">
@@ -92,9 +92,9 @@ export default function ForAuthorsPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-sapphire-deep to-violet-accent text-white p-8 rounded-lg">
-              <div className="text-4xl mb-4">💎</div>
-              <h3 className="text-2xl mb-4 font-heading">
+            <div className="bg-gradient-to-br from-sapphire-deep to-violet-accent text-white p-6 rounded-lg">
+              <div className="text-3xl mb-3">💎</div>
+              <h3 className="text-lg mb-3 font-heading">
                 Co nas wyróżnia?
               </h3>
               <p className="font-body leading-relaxed text-white/90">
@@ -231,13 +231,13 @@ export default function ForAuthorsPage() {
 
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-8 text-white">Gotowy, żeby wysłać swój manuskrypt?</h2>
-            <p className="text-xl mb-10 leading-relaxed font-body text-white/90">
+            <h2 className="mb-4 text-white">Gotowy, żeby wysłać swój manuskrypt?</h2>
+            <p className="text-base mb-8 leading-relaxed font-body text-white/90">
               Wyślij nam synopsis, próbkę tekstu i kilka zdań o sobie na adres:
             </p>
             <a
               href="mailto:manuskrypty@safaia.pl"
-              className="inline-block px-10 py-4 bg-white text-sapphire-deep font-body text-lg tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-2xl hover:scale-105 mb-8"
+              className="inline-block px-6 py-3 bg-white text-sapphire-deep font-body text-sm tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg mb-6"
             >
               manuskrypty@safaia.pl
             </a>

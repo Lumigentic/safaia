@@ -10,11 +10,11 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-lavender-soft/20 to-transparent">
+      <section className="pt-28 pb-16 bg-gradient-to-br from-lavender-soft/20 to-transparent">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6 fade-in-up">Usługi wydawnicze</h1>
-            <p className="text-2xl text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="mb-4 fade-in-up">Usługi wydawnicze</h1>
+            <p className="text-lg text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
               Kompleksowa obsługa wydawnicza od pomysłu do gotowej książki
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-white">
         <div className="container">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
               {[
                 {
                   icon: '✍️',
@@ -48,14 +48,14 @@ export default function ServicesPage() {
               ].map((service, index) => (
                 <div
                   key={index}
-                  className="text-center p-8 bg-cream rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 stagger-item"
+                  className="text-center p-6 bg-cream rounded-lg hover:shadow-lg transition-all duration-300 stagger-item"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="text-6xl mb-6">{service.icon}</div>
-                  <h3 className="text-2xl mb-4 text-sapphire-deep font-heading">
+                  <div className="text-4xl mb-4">{service.icon}</div>
+                  <h3 className="text-lg mb-3 text-sapphire-deep font-heading">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 font-body leading-relaxed">
+                  <p className="text-sm text-gray-600 font-body leading-relaxed">
                     {service.description}
                   </p>
                 </div>
