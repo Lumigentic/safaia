@@ -1,0 +1,24 @@
+/**
+ * Admin Logout API Route
+ * POST /api/admin/logout
+ */
+
+import { NextResponse } from 'next/server';
+import { clearSession } from '@/lib/auth';
+
+export async function POST() {
+  try {
+    await clearSession();
+
+    return NextResponse.json(
+      { success: true, message: 'Wylogowano pomyślnie' },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Logout error:', error);
+    return NextResponse.json(
+      { error: 'Błąd serwera' },
+      { status: 500 }
+    );
+  }
+}

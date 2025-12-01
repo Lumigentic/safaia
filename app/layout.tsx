@@ -1,30 +1,31 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Safaia - Wydawnictwo | Odkrywamy intelektualne klejnoty",
-  description: "Niezależne polskie wydawnictwo specjalizujące się w literaturze faktu. Sztuka, moda, fotografia, sztuka ludowa i historia kulinariów. Wiedza jako źródło szczęścia.",
-  keywords: ["wydawnictwo", "książki", "literatura faktu", "sztuka", "moda", "fotografia", "wydawnictwo niezależne", "Safaia"],
+  title: {
+    default: 'Safaia - Wydawnictwo',
+    template: '%s | Safaia',
+  },
+  description: 'Niezależne wydawnictwo specjalizujące się w literaturze faktu o sztuce, modzie, fotografii i kulturze ludowej.',
   openGraph: {
-    title: "Safaia - Wydawnictwo",
-    description: "Odkrywamy intelektualne klejnoty i dzielimy się nimi ze światem",
-    type: "website",
-    locale: "pl_PL",
+    title: 'Safaia - Wydawnictwo',
+    description: 'Niezależne wydawnictwo specjalizujące się w literaturze faktu o sztuce, modzie, fotografii i kulturze ludowej.',
+    type: 'website',
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pl">
-      <body className="antialiased">
+      <body>
         <Navigation />
-        <main className="relative z-10">
+        <main className="min-h-screen pt-20">
           {children}
         </main>
         <Footer />

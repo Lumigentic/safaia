@@ -1,0 +1,317 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "slug": "japonska-sztuka-ikebany",
+      "title": "Japońska sztuka ikebany",
+      "author": {
+        "name": "Anna Kowalska",
+        "bio": "Absolwentka japonistyki UW, przez 15 lat studiowała ikebanę w szkole Sogetsu w Tokio. Certyfikowana mistrzyni ikebany, prowadzi warsztaty i wykłady o japońskiej estetyce.",
+        "photo": "/authors/anna-kowalska.jpg",
+        "email": "a.kowalska@safaia.pl"
+      },
+      "category": "Sztuka",
+      "tags": ["ikebana", "Japonia", "zen", "kompozycja", "filozofia"],
+      "description": "Odkryj filozofię i techniki tradycyjnego japońskiego aranżowania kwiatów.",
+      "longDescription": "Kompleksowy przewodnik po sztuce ikebany, od podstawowych technik po zaawansowane kompozycje. Książka przedstawia historię tej tradycji, filozofię zen leżącą u jej podstaw oraz praktyczne wskazówki dla początkujących i zaawansowanych. Bogato ilustrowana fotografiami najpiękniejszych kompozycji mistrzów ikebany z całego świata.\n\nAutorka dzieli się swoimi doświadczeniami z 15 lat nauki w Japonii, przedstawiając nie tylko techniki, ale przede wszystkim duchowy wymiar tej praktyki. Każdy rozdział kończy się praktycznymi ćwiczeniami i inspiracjami do samodzielnej pracy.",
+      "excerpt": "Ikebana to nie tylko aranżowanie kwiatów. To medytacyjna praktyka, która uczy nas obserwacji natury, cierpliwości i harmonii. W tej książce odkryjesz, jak poprzez proste gałązki i kwiaty można wyrazić głębokie prawdy o życiu, przemijaniu i pięknie.\n\nPierwszy rozdział wprowadza czytelnika w historię ikebany – od jej początków w świątyniach buddyjskich po współczesne interpretacje. Dowiesz się, jak ta sztuka ewoluowała przez wieki i jakie szkoły ikebany istnieją dzisiaj.",
+      "tableOfContents": [
+        "Wstęp: Dlaczego ikebana?",
+        "Rozdział 1: Historia ikebany – od świątyń do salonów",
+        "Rozdział 2: Filozofia zen w praktyce kwiatowej",
+        "Rozdział 3: Podstawowe formy i techniki",
+        "Rozdział 4: Szkoły ikebany – Ikenobo, Ohara, Sogetsu",
+        "Rozdział 5: Narzędzia i materiały",
+        "Rozdział 6: Sezonowość w ikebanie",
+        "Rozdział 7: Kompozycje krok po kroku",
+        "Rozdział 8: Ikebana we współczesnym wnętrzu",
+        "Epilog: Droga mistrzostwa"
+      ],
+      "price": "89.00 zł",
+      "year": 2024,
+      "pages": 256,
+      "isbn": "978-83-67890-01-0",
+      "dimensions": "21 x 28 cm",
+      "binding": "Twarda oprawa",
+      "weight": "980 g",
+      "language": "Polski",
+      "coverImage": "/covers/ikebana.jpg",
+      "images": [
+        "/gallery/ikebana-1.jpg",
+        "/gallery/ikebana-2.jpg",
+        "/gallery/ikebana-3.jpg"
+      ],
+      "reviews": [
+        {
+          "author": "Magazyn Sztuka",
+          "rating": 5,
+          "text": "Najlepsza polska publikacja o ikebanie. Kowalska z pasją i wiedzą wprowadza w świat japońskiej estetyki."
+        },
+        {
+          "author": "Portal Kultura Востока",
+          "rating": 5,
+          "text": "Książka łączy teorię z praktyką w sposób mistrzowski. Zdjęcia są przepiękne."
+        }
+      ],
+      "relatedBooks": [5, 2],
+      "featured": true,
+      "newRelease": true,
+      "recommended": true,
+      "publishedDate": "2024-09-15",
+      "purchaseLink": "https://example.com/buy/ikebana"
+    },
+    {
+      "id": 2,
+      "slug": "historia-polskiego-haftu",
+      "title": "Historia polskiego haftu",
+      "author": {
+        "name": "Maria Nowak",
+        "bio": "Etnografka, kustoszka działu sztuki ludowej w Muzeum Etnograficznym. Przez 20 lat dokumentowała tradycje hafciarskie w polskich regionach.",
+        "photo": "/authors/maria-nowak.jpg",
+        "email": "m.nowak@safaia.pl"
+      },
+      "category": "Sztuka ludowa",
+      "tags": ["haft", "tradycja", "wzory ludowe", "rzemiosło", "Polska"],
+      "description": "Podróż przez wieki tradycji hafciarskiej w Polsce - od wzorów ludowych po współczesność.",
+      "longDescription": "Pierwsza tak kompleksowa publikacja o polskiej sztuce hafciarskiej. Od średniowiecza przez bogactwo wzorów ludowych różnych regionów, aż po współczesne interpretacje tradycji. Setki fotografii historycznych i współczesnych haftów, wzory do odtworzenia, wywiady z rzemieślnikami.\n\nKsiążka dokumentuje zanikające techniki i wzory, stanowiąc bezcenne kompendium dla badaczy i praktyków. Każdy region Polski reprezentowany jest osobnym rozdziałem z analizą charakterystycznych motywów i kolorystyki.",
+      "excerpt": "Haft towarzyszy Polakom od wieków. W każdym regionie rozwijały się unikalne techniki i wzory, które opowiadają historie o życiu, wierzeniach i marzeniach naszych przodków. Ta książka to próba ocalenia tej bogactwa przed zapomnieniem.\n\nOd wyrafinowanych paramentów kościelnych po proste, ale pełne urody wzory na chłopskich koszulach – polski haft jest niezwykle różnorodny. Autorka przez 20 lat podróżowała po kraju, dokumentując zarówno muzealne zbiory, jak i prace współczesnych hafciarek.",
+      "tableOfContents": [
+        "Wprowadzenie: Haft jako język kultury",
+        "Rozdział 1: Średniowieczne paramenty i tkaniny liturgiczne",
+        "Rozdział 2: Haft szlachecki – kontusz i pasy",
+        "Rozdział 3: Kurpie – geometria i symbole",
+        "Rozdział 4: Łowicz – eksplozja barw",
+        "Rozdział 5: Podhale – góralskie inspiracje",
+        "Rozdział 6: Kaszuby – marine motywy",
+        "Rozdział 7: Krakowskie – kwiatowa obfitość",
+        "Rozdział 8: Współczesne interpretacje tradycji",
+        "Aneks: Podstawowe techniki haftu"
+      ],
+      "price": "119.00 zł",
+      "year": 2023,
+      "pages": 320,
+      "isbn": "978-83-67890-02-7",
+      "dimensions": "24 x 30 cm",
+      "binding": "Twarda oprawa w slipcase",
+      "weight": "1450 g",
+      "language": "Polski",
+      "coverImage": "/covers/haft.jpg",
+      "images": [],
+      "reviews": [
+        {
+          "author": "Rzemiosło Artystyczne",
+          "rating": 5,
+          "text": "Monumentalne dzieło. Obowiązkowa lektura dla każdego zainteresowanego sztuką ludową."
+        }
+      ],
+      "relatedBooks": [4, 6],
+      "featured": true,
+      "newRelease": false,
+      "recommended": true,
+      "publishedDate": "2023-11-20",
+      "purchaseLink": "https://example.com/buy/haft"
+    },
+    {
+      "id": 3,
+      "slug": "fotografie-zapomnianych-miejsc",
+      "title": "Fotografie zapomnianych miejsc",
+      "author": {
+        "name": "Piotr Wiśniewski",
+        "bio": "Fotograf dokumentalista, specjalizujący się w urban exploration. Jego prace publikowane były w National Geographic i The Guardian.",
+        "photo": "/authors/piotr-wisniewski.jpg",
+        "email": "p.wisniewski@safaia.pl"
+      },
+      "category": "Fotografia",
+      "tags": ["fotografia", "urbex", "architektura", "ruiny", "Europa"],
+      "description": "Album fotograficzny przedstawiający opuszczone budynki i zapomniane zakątki Europy.",
+      "longDescription": "Poruszająca podróż przez opuszczone miejsca Europy. Stare fabryki, pałace, kina i szpitale - każde z nich kryje historię ludzi, którzy tam żyli i pracowali. Fotograf dokumentuje przemijanie i piękno ruin, zanim znikną na zawsze.\n\nKażde zdjęcie poprzedzone jest krótkim esejem historycznym o danym miejscu. Dowiesz się, jak wyglądało życie w tych budynkach, dlaczego zostały opuszczone i co stało się z ich mieszkańcami.",
+      "excerpt": "Opuszczone fabryki, zapomnienia pałace, zrujnowane kina – te miejsca mają swoją tajemniczą urodę. Czas zostawił w nich swoje ślady: odpadającą farbę, przebijające się przez okna drzewa, rozpadające się sufity. To dokumentacja przemijania, ale też hołd dla architektury i ludzi, którzy kiedyś nadawali tym miejscom życie.\n\nWiśniewski przez 5 lat podróżował po Europie, fotografując miejsca na granicy zapomnienia. Niektóre z nich nie istnieją już dzisiaj.",
+      "tableOfContents": [
+        "Wstęp: Piękno w ruinie",
+        "Część I: Fabryki – katedry przemysłu",
+        "Część II: Pałace – upadła arystokracja",
+        "Część III: Szpitale – miejsca życia i śmierci",
+        "Część IV: Kina – świątynie marzeń",
+        "Część V: Dworca – bramy do świata",
+        "Epilog: Co zostanie po nas?"
+      ],
+      "price": "149.00 zł",
+      "year": 2024,
+      "pages": 200,
+      "isbn": "978-83-67890-03-4",
+      "dimensions": "28 x 28 cm",
+      "binding": "Twarda oprawa",
+      "weight": "1200 g",
+      "language": "Polski / Angielski",
+      "coverImage": "/covers/urbex.jpg",
+      "images": [],
+      "reviews": [],
+      "relatedBooks": [1, 5],
+      "featured": true,
+      "newRelease": true,
+      "recommended": false,
+      "publishedDate": "2024-10-01",
+      "purchaseLink": "https://example.com/buy/urbex"
+    },
+    {
+      "id": 4,
+      "slug": "moda-lat-20-xx-wieku",
+      "title": "Moda lat 20. XX wieku",
+      "author": {
+        "name": "Ewa Zielińska",
+        "bio": "Historyczka mody, kuratorka wystaw w Muzeum Narodowym. Autorka kilku książek o historii garderoby XX wieku.",
+        "photo": "/authors/ewa-zielinska.jpg",
+        "email": "e.zielinska@safaia.pl"
+      },
+      "category": "Moda",
+      "tags": ["moda", "lata 20.", "flapper", "Art Deco", "emancypacja"],
+      "description": "Rewolucja w damskiej garderobie - jak lata dwudzieste zmieniły świat mody na zawsze.",
+      "longDescription": "Lata 20. XX wieku to przełom w historii mody. Kobiety skróciły włosy i podkasały suknie, zaczęły nosić spodnie i prowadzić samochody. Ta książka opowiada historię modowej rewolucji przez pryzmat projektantów, ikon stylu i zmian społecznych.\n\nBogato ilustrowana oryginalnymi fotografiami z epoki, reklamami, szkicami projektantów. Analiza nie tylko strojów, ale całego stylu życia lat 20. – od muzyki jazz po Art Deco.",
+      "excerpt": "Rok 1920. Wojna się skończyła, a kobiety nie chciały już wracać do gorsetów i długich spódnic. Nowa dekada przyniosła rewolucję: krótkie włosy, krótkie sukienki, jasne kolory i wolność. Coco Chanel, Jean Patou, Paul Poiret – ci projektanci zdefiniowali nową kobiecość.\n\nFlapper girls tańczyły charlestona w klubach jazzowych, nosiły nawleczone koraliki i kapelusziki cloche. Moda lat 20. to nie tylko ubrania – to cała filozofia życia.",
+      "excerpt": "Rok 1920 przyniósł więcej niż koniec Wielkiej Wojny. Wraz z pokojem przyszła rewolucja w modzie, która na zawsze zmieniła sposób, w jaki kobiety się ubierają i postrzegają siebie. Lata dwudzieste to era emancypacji, jazzu i Art Deco – a przede wszystkim wolności.\n\nKobiety skróciły włosy do karku, suknie powyżej kolan, zarzuciły gorsety. Coco Chanel wprowadziła prostotę i elegancję, Jean Patou stworzył sportową kobiecość, a Paul Poiret zainspirował się Orientem. To dekada, w której moda stała się demokratyczna i dostępna.",
+      "tableOfContents": [
+        "Wprowadzenie: Koniec belle époque",
+        "Rozdział 1: Rewolucja w garderobie – od gorsetu do wolności",
+        "Rozdział 2: Coco Chanel i narodziny nowoczesnej elegancji",
+        "Rozdział 3: Flapper girls – nowa kobieta",
+        "Rozdział 4: Art Deco w modzie",
+        "Rozdział 5: Projektanci dekady",
+        "Rozdział 6: Akcesoria: cloche, koraliki, futra",
+        "Rozdział 7: Moda męska lat 20.",
+        "Rozdział 8: Wpływ kina na modę",
+        "Epilog: Dziedzictwo lat 20."
+      ],
+      "price": "99.00 zł",
+      "year": 2023,
+      "pages": 280,
+      "isbn": "978-83-67890-04-1",
+      "dimensions": "21 x 26 cm",
+      "binding": "Twarda oprawa",
+      "weight": "890 g",
+      "language": "Polski",
+      "coverImage": "/covers/moda-20.jpg",
+      "images": [],
+      "reviews": [
+        {
+          "author": "Vogue Polska",
+          "rating": 4,
+          "text": "Fascynująca podróż przez najbardziej rewolucyjną dekadę w historii mody."
+        }
+      ],
+      "relatedBooks": [2, 5],
+      "featured": false,
+      "newRelease": false,
+      "recommended": true,
+      "publishedDate": "2023-05-10",
+      "purchaseLink": "https://example.com/buy/moda20"
+    },
+    {
+      "id": 5,
+      "slug": "bauhaus-forma-i-funkcja",
+      "title": "Bauhaus: Forma i funkcja",
+      "author": {
+        "name": "Katarzyna Majewska",
+        "bio": "Architektka i historyczka sztuki, absolwentka Bauhaus-Universität Weimar. Specjalizuje się w designie XX wieku.",
+        "photo": "/authors/katarzyna-majewska.jpg",
+        "email": "k.majewska@safaia.pl"
+      },
+      "category": "Sztuka",
+      "tags": ["Bauhaus", "design", "architektura", "modernizm", "funkcjonalizm"],
+      "description": "Wpływ niemieckiej szkoły sztuki na współczesny design i architekturę.",
+      "longDescription": "Bauhaus to nie tylko szkoła sztuki, ale rewolucja w myśleniu o designie. Ta książka przedstawia historię szkoły, jej najważniejszych przedstawicieli oraz wpływ, jaki wywiera na współczesny świat do dziś. Bogato ilustrowana archiwalnymi i współczesnymi fotografiami.\n\nOd krzesła Wassily po budynki Gropiusa – Bauhaus zdefiniował estetykę XX wieku. Autorka analizuje nie tylko dzieła, ale też pedagogię szkoły i jej filozofię łączenia sztuki z rzemiosłem.",
+      "excerpt": "\"Forma follows function\" – to hasło Bauhausu zmieniło świat designu. Założona w 1919 roku w Weimarze szkoła połączyła sztukę, rzemiosło i technologię, tworząc nową wizję nowoczesności. Walter Gropius, Paul Klee, Wassily Kandinsky, Marcel Breuer – to tylko niektóre z wielkich nazwisk związanych z tą instytucją.\n\nBauhaus istniał zaledwie 14 lat, ale jego wpływ trwa do dziś. Od iPhone'a po IKEA – wszędzie widać ślady Bauhausowskiej estetyki: prostota, funkcjonalność, geometria.",
+      "tableOfContents": [
+        "Wstęp: Bauhaus – idea i rzeczywistość",
+        "Rozdział 1: Narodziny szkoły (1919-1925)",
+        "Rozdział 2: Mistrzowie i uczniowie",
+        "Rozdział 3: Architektura Bauhausu",
+        "Rozdział 4: Design mebli i przedmiotów",
+        "Rozdział 5: Typografia i grafika",
+        "Rozdział 6: Tkanina i tekstylia",
+        "Rozdział 7: Bauhaus a polityka",
+        "Rozdział 8: Zamknięcie szkoły i emigracja",
+        "Rozdział 9: Wpływ Bauhausu na świat",
+        "Epilog: Bauhaus dzisiaj"
+      ],
+      "price": "139.00 zł",
+      "year": 2023,
+      "pages": 272,
+      "isbn": "978-83-67890-05-8",
+      "dimensions": "24 x 28 cm",
+      "binding": "Twarda oprawa",
+      "weight": "1100 g",
+      "language": "Polski",
+      "coverImage": "/covers/bauhaus.jpg",
+      "images": [],
+      "reviews": [
+        {
+          "author": "Architektura & Biznes",
+          "rating": 5,
+          "text": "Najlepsza polska publikacja o Bauhausie. Must-have dla każdego projektanta."
+        }
+      ],
+      "relatedBooks": [1, 3, 4],
+      "featured": true,
+      "newRelease": false,
+      "recommended": true,
+      "publishedDate": "2023-03-15",
+      "purchaseLink": "https://example.com/buy/bauhaus"
+    },
+    {
+      "id": 6,
+      "slug": "kulinarna-historia-polski",
+      "title": "Kulinarna historia Polski",
+      "author": {
+        "name": "Tomasz Lewandowski",
+        "bio": "Historyk kulinarny, autor programów telewizyjnych o historii kuchni polskiej. Redaktor naczelny magazynu \"Smaki Historii\".",
+        "photo": "/authors/tomasz-lewandowski.jpg",
+        "email": "t.lewandowski@safaia.pl"
+      },
+      "category": "Historia kulinariów",
+      "tags": ["kuchnia polska", "historia", "przepisy", "tradycja", "kulinaria"],
+      "description": "Od średniowiecznych uczt po współczesną kuchnię - ewolucja polskich smaków.",
+      "longDescription": "Fascynująca podróż przez historię polskiej kuchni. Jak jadano na dworach królewskich? Skąd wzięły się nasze tradycyjne potrawy? Jak wyglądały stoły szlacheckie i chłopskie? Książka pełna historycznych przepisów, anegdot i ciekawostek kulinarnych.\n\nAutor nie tylko opisuje dania, ale całą kulturę jedzenia w Polsce – od średniowiecznych postów przez barokowe wystawne biesiady po chłopskie posiłki. Każdy rozdział zawiera autentyczne przepisy do odtworzenia we współczesnej kuchni.",
+      "excerpt": "Polska kuchnia to więcej niż bigos i pierogi. To wielowiekowa tradycja, w której miesza się wpływy Wschodu i Zachodu, dworu królewskiego i chłopskiej chaty. Od średniowiecznych uczt z dzikiem i miodem pitnym, przez barokowe egzotyki sprowadzane z całego świata, po tradycyjne potrawy, które znamy dziś.\n\nW tej książce odkryjesz, jak jadali Piastowie i Jagiellonowie, czym raczyła się szlachta sarmacka i co gotowało się w chłopskich chatach. Znajdziesz tu autentyczne przepisy z XVI-wiecznych ksiąg kuchennych, dostosowane do współczesnych warunków.",
+      "tableOfContents": [
+        "Wstęp: Smaki Polski",
+        "Rozdział 1: Średniowieczna kuchnia – czosnek i miód",
+        "Rozdział 2: Dwór królewski za Jagiellonów",
+        "Rozdział 3: Barok i saskie przepych",
+        "Rozdział 4: Kuchnia szlachecka",
+        "Rozdział 5: Stół chłopski – od pola do stołu",
+        "Rozdział 6: Kuchnia regionalna",
+        "Rozdział 7: Wpływy obce w kuchni polskiej",
+        "Rozdział 8: Tradycyjne święta i potrawy",
+        "Rozdział 9: XIX wiek – kuchnia mieszczańska",
+        "Rozdział 10: XX wiek i kulinarny PRL",
+        "Epilog: Polska kuchnia dzisiaj",
+        "Aneks: 50 historycznych przepisów"
+      ],
+      "price": "109.00 zł",
+      "year": 2024,
+      "pages": 304,
+      "isbn": "978-83-67890-06-5",
+      "dimensions": "21 x 24 cm",
+      "binding": "Twarda oprawa",
+      "weight": "950 g",
+      "language": "Polski",
+      "coverImage": "/covers/kulinaria.jpg",
+      "images": [],
+      "reviews": [],
+      "relatedBooks": [2, 4],
+      "featured": false,
+      "newRelease": true,
+      "recommended": false,
+      "publishedDate": "2024-08-20",
+      "purchaseLink": "https://example.com/buy/kulinaria"
+    }
+  ],
+  "categories": [
+    "Wszystkie",
+    "Sztuka",
+    "Moda",
+    "Fotografia",
+    "Sztuka ludowa",
+    "Historia kulinariów"
+  ]
+}

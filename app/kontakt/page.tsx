@@ -1,281 +1,285 @@
 'use client';
 
+import { Metadata } from 'next';
 import { useState } from 'react';
 
-export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+export default function KontaktPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Tu można dodać obsługę wysyłania formularza (np. do API)
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-  };
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    }, 2000);
   };
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-28 pb-16 bg-gradient-to-br from-lavender-soft/20 to-transparent">
+      {/* Header */}
+      <section className="section-padding bg-gradient-to-br from-cream to-white">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-4 fade-in-up">Kontakt</h1>
-            <p className="text-lg text-gray-600 font-body leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Masz pytania? Chcesz z nami współpracować?
-              <span className="block mt-2 text-sapphire-deep font-semibold">
-                Skontaktuj się z nami — odpowiadamy na każdą wiadomość.
-              </span>
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="mb-6">Kontakt</h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Masz pytania? Chcesz się z nami skontaktować? Jesteśmy tu, aby pomóc.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Informacje kontaktowe + formularz */}
+      {/* Contact Info and Form */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            {/* Lewa strona - informacje */}
-            <div>
-              <h2 className="mb-6">Skontaktuj się z nami</h2>
+          <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {/* Contact Information */}
+            <div className="lg:col-span-1">
+              <h2 className="text-2xl font-display mb-6 text-sapphire-dark">
+                Wydawnictwo Safaia
+              </h2>
 
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
-                      Email
-                    </h3>
-                    <p className="text-gray-600 font-body mb-1">
-                      Ogólne pytania:{' '}
-                      <a
-                        href="mailto:kontakt@safaia.pl"
-                        className="text-sapphire-deep hover:underline"
-                      >
-                        kontakt@safaia.pl
-                      </a>
-                    </p>
-                    <p className="text-gray-600 font-body">
-                      Dla autorów:{' '}
-                      <a
-                        href="mailto:manuskrypty@safaia.pl"
-                        className="text-sapphire-deep hover:underline"
-                      >
-                        manuskrypty@safaia.pl
-                      </a>
-                    </p>
-                  </div>
+              <div className="space-y-6">
+                {/* Address */}
+                <div>
+                  <h3 className="text-sm font-medium text-sapphire-dark uppercase tracking-wide mb-2">
+                    Adres
+                  </h3>
+                  <p className="text-gray-600">
+                    ul. Przykładowa 123<br />
+                    00-001 Warszawa<br />
+                    Polska
+                  </p>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                {/* Email */}
+                <div>
+                  <h3 className="text-sm font-medium text-sapphire-dark uppercase tracking-wide mb-2">
+                    Email
+                  </h3>
+                  <a
+                    href="mailto:kontakt@safaia.pl"
+                    className="text-sapphire hover:text-sapphire-dark transition-colors"
+                  >
+                    kontakt@safaia.pl
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Dla autorów:
+                    <br />
+                    <a
+                      href="mailto:manuskrypty@safaia.pl"
+                      className="text-sapphire hover:text-sapphire-dark transition-colors"
                     >
-                      <path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
-                      Social Media
-                    </h3>
-                    <div className="flex gap-4">
-                      <a
-                        href="#"
-                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
-                      >
-                        Instagram
-                      </a>
-                      <a
-                        href="#"
-                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
-                      >
-                        Facebook
-                      </a>
-                      <a
-                        href="#"
-                        className="text-gray-600 hover:text-sapphire-deep transition-colors"
-                      >
-                        LinkedIn
-                      </a>
-                    </div>
-                  </div>
+                      manuskrypty@safaia.pl
+                    </a>
+                  </p>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sapphire-deep to-violet-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                {/* Phone */}
+                <div>
+                  <h3 className="text-sm font-medium text-sapphire-dark uppercase tracking-wide mb-2">
+                    Telefon
+                  </h3>
+                  <a
+                    href="tel:+48123456789"
+                    className="text-sapphire hover:text-sapphire-dark transition-colors"
+                  >
+                    +48 123 456 789
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Pn-Pt: 9:00 - 17:00
+                  </p>
+                </div>
+
+                {/* Social Media */}
+                <div>
+                  <h3 className="text-sm font-medium text-sapphire-dark uppercase tracking-wide mb-3">
+                    Social Media
+                  </h3>
+                  <div className="flex gap-4">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-sapphire/10 hover:bg-sapphire text-sapphire hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Instagram"
                     >
-                      <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-heading text-sapphire-deep mb-2">
-                      Założycielka
-                    </h3>
-                    <p className="text-gray-600 font-body">
-                      <strong>Rita Krawczyk</strong>
-                      <br />
-                      Redaktor naczelna i wydawca
-                    </p>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-sapphire/10 hover:bg-sapphire text-sapphire hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Facebook"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-sapphire/10 hover:bg-sapphire text-sapphire hover:text-white rounded-full flex items-center justify-center transition-colors"
+                      aria-label="Twitter"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              {/* Dodatkowe info */}
-              <div className="mt-8 p-4 bg-cream rounded-lg">
-                <h4 className="text-sm font-heading text-sapphire-deep mb-2">
-                  Czas odpowiedzi
-                </h4>
-                <p className="text-sm text-gray-600 font-body leading-relaxed">
-                  Staramy się odpowiadać na wszystkie wiadomości w ciągu 2-3 dni roboczych.
-                  W przypadku zgłoszeń manuskryptów czas odpowiedzi może wynosić do 3 tygodni.
-                </p>
+              {/* Opening Hours */}
+              <div className="mt-8 p-6 bg-cream">
+                <h3 className="text-sm font-medium text-sapphire-dark uppercase tracking-wide mb-3">
+                  Godziny pracy
+                </h3>
+                <dl className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <dt className="text-gray-600">Poniedziałek - Piątek:</dt>
+                    <dd className="font-medium">9:00 - 17:00</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-gray-600">Sobota - Niedziela:</dt>
+                    <dd className="font-medium">Zamknięte</dd>
+                  </div>
+                </dl>
               </div>
             </div>
 
-            {/* Prawa strona - formularz */}
-            <div className="bg-cream p-6 rounded-lg">
-              <h3 className="text-lg font-heading text-sapphire-deep mb-4">
+            {/* Contact Form */}
+            <div className="lg:col-span-2">
+              <h2 className="text-2xl font-display mb-6 text-sapphire-dark">
                 Wyślij wiadomość
-              </h3>
+              </h2>
 
-              {submitted && (
-                <div className="mb-6 p-4 bg-green-100 border border-green-300 rounded-lg text-green-800 font-body text-sm">
-                  Dziękujemy za wiadomość! Odpowiemy najszybciej jak to możliwe.
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 border-l-4 border-green-500">
+                  <div className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <h3 className="font-medium text-green-800">Wiadomość wysłana!</h3>
+                      <p className="text-sm text-green-700 mt-1">
+                        Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-sapphire-dark mb-2">
+                      Imię i nazwisko <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 border-2 border-gray-300 focus:border-sapphire focus:outline-none transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-sapphire-dark mb-2">
+                      Email <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border-2 border-gray-300 focus:border-sapphire focus:outline-none transition-colors"
+                      placeholder="twoj@email.pl"
+                    />
+                  </div>
+                </div>
+
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-body text-charcoal mb-2"
-                  >
-                    Imię i nazwisko *
+                  <label htmlFor="phone" className="block text-sm font-medium text-sapphire-dark mb-2">
+                    Telefon
                   </label>
                   <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
-                    placeholder="Jan Kowalski"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="w-full px-4 py-3 border-2 border-gray-300 focus:border-sapphire focus:outline-none transition-colors"
+                    placeholder="+48 123 456 789"
                   />
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-body text-charcoal mb-2"
-                  >
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
-                    placeholder="jan@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-sm font-body text-charcoal mb-2"
-                  >
-                    Temat *
+                  <label htmlFor="subject" className="block text-sm font-medium text-sapphire-dark mb-2">
+                    Temat <span className="text-red-500">*</span>
                   </label>
                   <select
                     id="subject"
                     name="subject"
                     required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body bg-white"
+                    className="w-full px-4 py-3 border-2 border-gray-300 focus:border-sapphire focus:outline-none transition-colors"
                   >
-                    <option value="">Wybierz temat...</option>
-                    <option value="manuskrypt">Zgłoszenie manuskryptu</option>
-                    <option value="uslugi">Zapytanie o usługi wydawnicze</option>
-                    <option value="wspolpraca">Propozycja współpracy</option>
-                    <option value="zamowienie">Zamówienie książki</option>
-                    <option value="inne">Inne</option>
+                    <option value="">Wybierz temat</option>
+                    <option value="general">Pytanie ogólne</option>
+                    <option value="order">Zamówienie</option>
+                    <option value="collaboration">Współpraca</option>
+                    <option value="manuscript">Manuskrypt</option>
+                    <option value="press">Zapytanie prasowe</option>
+                    <option value="other">Inne</option>
                   </select>
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-body text-charcoal mb-2"
-                  >
-                    Wiadomość *
+                  <label htmlFor="message" className="block text-sm font-medium text-sapphire-dark mb-2">
+                    Wiadomość <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-sapphire-deep focus:outline-none font-body resize-none bg-white"
-                    placeholder="Twoja wiadomość..."
-                  />
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-300 focus:border-sapphire focus:outline-none transition-colors resize-y"
+                    placeholder="Jak możemy Ci pomóc?"
+                  ></textarea>
+                </div>
+
+                <div>
+                  <label className="flex items-start gap-3 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      required
+                      className="mt-1 w-5 h-5 text-sapphire border-2 border-gray-300 focus:ring-sapphire"
+                    />
+                    <span className="text-sm text-gray-600">
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych w celu udzielenia odpowiedzi na zapytanie.{' '}
+                      <span className="text-red-500">*</span>
+                    </span>
+                  </label>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-sapphire-deep text-white font-body text-sm tracking-wide rounded-sm hover:bg-indigo-dark transition-all duration-300 hover:shadow-lg"
+                  disabled={isSubmitting}
+                  className="w-full px-8 py-4 bg-sapphire text-white font-medium hover:bg-sapphire-dark transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
-                  Wyślij wiadomość
+                  {isSubmitting ? 'Wysyłanie...' : 'Wyślij wiadomość'}
                 </button>
 
-                <p className="text-xs text-gray-600 font-body text-center">
+                <p className="text-xs text-gray-500 text-center">
                   * Pola wymagane
                 </p>
               </form>
@@ -284,30 +288,67 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Mapa lub dodatkowa sekcja */}
-      <section className="section-padding bg-gradient-to-br from-sapphire-deep to-violet-accent text-white">
+      {/* FAQ Section */}
+      <section className="section-padding bg-cream">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-4 text-white">Współpracujmy razem</h2>
-            <p className="text-base leading-relaxed font-body text-white/90 mb-6">
-              Jesteśmy otwarci na nowe pomysły, projekty i partnerstwa.
-              Niezależnie od tego, czy jesteś autorem, ilustratorem, fotografem
-              czy po prostu miłośnikiem dobrych książek — chętnie Cię poznamy.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:kontakt@safaia.pl"
-                className="px-6 py-2.5 bg-white text-sapphire-deep font-body text-sm tracking-wide rounded-sm hover:bg-cream transition-all duration-300 hover:shadow-lg"
-              >
-                kontakt@safaia.pl
-              </a>
-              <a
-                href="mailto:manuskrypty@safaia.pl"
-                className="px-6 py-2.5 border-2 border-white text-white font-body text-sm tracking-wide rounded-sm hover:bg-white hover:text-sapphire-deep transition-all duration-300"
-              >
-                manuskrypty@safaia.pl
-              </a>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-12 text-center">Najczęściej zadawane pytania</h2>
+            <div className="space-y-6">
+              {[
+                {
+                  question: 'Jak mogę zamówić książkę?',
+                  answer: 'Obecnie przyjmujemy zamówienia drogą mailową na adres kontakt@safaia.pl. Wkrótce uruchomimy sklep internetowy z możliwością zamówień online.',
+                },
+                {
+                  question: 'Jaki jest czas realizacji zamówienia?',
+                  answer: 'Standardowy czas realizacji to 2-3 dni robocze. Po wysłaniu paczki otrzymasz numer przesyłki do śledzenia.',
+                },
+                {
+                  question: 'Czy mogę zwrócić książkę?',
+                  answer: 'Tak, masz 14 dni na zwrot od daty otrzymania przesyłki. Książka musi być w stanie nienaruszonym.',
+                },
+                {
+                  question: 'Czy współpracujecie z księgarniami?',
+                  answer: 'Tak, chętnie nawiążemy współpracę. Napisz do nas na kontakt@safaia.pl z informacją o Twojej księgarni.',
+                },
+                {
+                  question: 'Jak mogę zgłosić propozycję książki?',
+                  answer: 'Zapraszamy na stronę "Dla autorów", gdzie znajdziesz formularz zgłoszeniowy i szczegółowe informacje o procesie.',
+                },
+              ].map((faq, index) => (
+                <details key={index} className="bg-white p-6 group">
+                  <summary className="font-display text-lg text-sapphire-dark cursor-pointer list-none flex justify-between items-center">
+                    <span>{faq.question}</span>
+                    <svg
+                      className="w-5 h-5 text-sapphire transition-transform group-open:rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p className="mt-4 text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section - Placeholder */}
+      <section className="bg-gray-200">
+        <div className="aspect-video md:aspect-[21/9] bg-gradient-to-br from-sapphire/20 to-violet/20 flex items-center justify-center">
+          <div className="text-center">
+            <svg className="w-16 h-16 text-sapphire/40 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <p className="text-gray-600">
+              Warszawa, ul. Przykładowa 123
+            </p>
           </div>
         </div>
       </section>

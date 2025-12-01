@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:lighthouse": "node scripts/lighthouse.js",
+    "test:a11y": "node scripts/axe-test.js",
+    "test:performance": "npm run test:lighthouse && npm run test:a11y",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "next": "16.0.6",
@@ -14,12 +18,19 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@axe-core/puppeteer": "^4.10.2",
+    "@lhci/cli": "^0.14.0",
+    "@next/bundle-analyzer": "^15.1.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "chrome-launcher": "^1.1.2",
     "eslint": "^9",
     "eslint-config-next": "16.0.6",
+    "lighthouse": "^12.2.1",
+    "puppeteer": "^23.11.1",
+    "sharp": "^0.33.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
